@@ -8,7 +8,7 @@ function GuessResult({guesses}) {
     return (
         <div className="guess-results">
             {range(NUM_OF_GUESSES_ALLOWED).map((num) => (
-                <Guess key={num} value={guesses[num] ? guesses[num].guess : undefined} />
+                <Guess key={num} value={guesses[num] ? guesses[num].guess : undefined} checkedGuessArrray={guesses[num] ? guesses[num].checkedGuessArray : undefined} />
             ))}
         </div>
     );
